@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Desktop default: full height, width scales to keep aspect ratio */
-    .hero-image {
-      height: 100vh;
-      width: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* Mobile: full width, height scales to keep aspect ratio */
-    @media (max-width: 768px) {
-      .hero-image {
-        width: 100%;
-        height: auto;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Lobsters - Squash Nijmegen</title>
+    <link rel="icon" type="image/jpeg" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="homepage.jpeg" class="hero-image">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.jpeg">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Over ons</a></li>
+                <li><a href="enrol.html">Inschrijven</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welkom bij Squashvereniging De Lobsters!</h1>
+            <p>Op zoek naar een squashclub in Nijmegen, maar ben je geen student meer? Kom dan bij De Lobsters!</p>
+            <div class="button-group">
+                <a href="enrol.html" class="btn-primary">Schrijf je in!</a>
+                <a href="about.html" class="btn-secondary">Meer info</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 De Lobsters</p>
+    </footer>
 </body>
 </html>

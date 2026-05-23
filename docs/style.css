@@ -1,0 +1,233 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ffffff;
+    border-bottom: 5px solid #002d6c; /* Dark Blue Line */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #002d6c;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 150px; /* Adjust this value to make the logo larger or smaller */
+    width: auto;  /* Keeps the aspect ratio proportional */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #002d6c;
+    font-weight: 600;
+    font-size: large;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b43029; /* Red Accent */
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #002d6c;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #4a5568;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+
+/* Container to group the buttons together */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures buttons wrap nicely on very small phone screens */
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: #b43029; /* Red Accent */
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #b43029;
+    transform: translateY(-2px);
+}
+
+/* Secondary Button Style (Dark Blue Outline) */
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: #1a365d; /* Dark Blue */
+    padding: 0.875rem 2.5rem; /* Slightly reduced padding to account for the border width */
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #1a365d;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #1a365d;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(26, 54, 93, 0.2);
+}
+
+/* Page specific content */
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h1 {
+    color: #002d6c;
+    margin-bottom: 1.5rem;
+}
+
+.content-section p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.pricing-card {
+    border: 2px solid #edf2f7;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    background-color: #f7fafc;
+}
+
+.pricing-card h2 {
+    color: #002d6c;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b43029;
+    margin: 1rem 0;
+}
+
+/* Center the list block itself, but keeps text left-aligned with nice bullets */
+.benifits-list {
+    display: inline-block; /* Makes it only as wide as its content */
+    text-align: left; /* Aligns the bullets and text to the left */
+    margin: 1rem auto 1.5rem auto; /* Centers the block with top/bottom spacing */
+    padding-left: 1.5rem; /* Ensures space for the bullets themselves */
+    line-height: 1.8;
+    color: #4a5568;
+}
+
+.benifits-list li {
+    margin-bottom: 0.5rem; /* Spacing between bullet points */
+}
+
+/* Warning Box */
+.warning-box {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #002d6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    main {
+        padding: 2rem 1rem;
+    }
+}
