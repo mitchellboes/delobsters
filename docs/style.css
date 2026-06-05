@@ -17,7 +17,7 @@ body {
 /* Header & Navigation */
 header {
     background-color: #ffffff;
-    border-bottom: 5px solid #002d6c; /* Dark Blue Line */
+    border-bottom: 3px solid #002d6c; /* Dark Blue Line */
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
